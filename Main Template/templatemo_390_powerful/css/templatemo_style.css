@@ -1,9 +1,14 @@
 /* Credit: http://www.templatemo.com */
 
-html, body {
+html {
 	font-family: 'Raleway', "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+body{
+	font-family: 'Raleway', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left:50px;
+	margin-right:50px;
 
+}
 a {
 	color: #00ACE9;
 }
