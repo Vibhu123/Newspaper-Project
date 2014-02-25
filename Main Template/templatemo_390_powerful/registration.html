@@ -1,0 +1,102 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/templatemo_style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--<script>
+function eval_email(ids){
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  if(reg.test(ids.value) == false){
+    ids.style.background = "#FA8258";
+    ids.style.border = "0px solid";
+  }
+}
+function cmp_pass(){
+  if(document.getElementById('pass1').value != document.getElementById('pass2').value){
+    document.getElementById('pass2').style.background = "#FA8258";
+    document.getElementById('pass2').style.border = "0px solid";
+	alert("incorrect Passwords");
+  }
+}
+function fcs(ids){
+  var inp = document.getElementById(ids);
+  inp.style.border = "1px solid #00FF00";
+  if(inp.style.background = "#FA8258")
+    inp.style.background = "";
+}
+function dcs(ids){
+  var inp = document.getElementById(ids);
+  inp.style.border = "0px solid";
+  if(inp.value == '')
+    inp.style.background = "#FA8258";
+  else
+    inp.style.border = "2px solid #088A08";
+  if(ids == 'email')
+    eval_email(inp);
+  if(ids == 'pass2')
+    cmp_pass(inp);
+}
+function mval(){
+  for(i=0;i<document.getElementsByTagName('input').length; i++) {
+    var chk_one = document.getElementsByTagName('input')[i];
+    if(chk_one.style.background.length != 0){
+      alert("please fill all form contents");
+      return false;
+    }
+  }
+  return false;
+}
+function clrall(){
+  for(i=0;i<document.getElementsByTagName('input').length; i++) {
+    document.getElementsByTagName('input')[i].style.background = '';
+    document.getElementsByTagName('input')[i].style.border = '1px solid #acacac';
+    init();
+  }
+}
+function init(){
+  document.getElementsByTagName('input')[0].focus();
+}
+
+</script>-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#signup_form").validate();
+});
+</script>
+</head>
+<body style="width: 98%;" onload="init()">
+<h1 align="center" style="color:#00ACE9">Create Your Account.</h1><br><br>
+  <div style="width: 40%; margin: auto; font-size: 20px;">
+   <form name="form" action="#" method="post" id="signup_form" onsubmit="return mval();">
+     <fieldset>
+	<div class="clr"></div>
+	  <input type="text" name="fname" id="fname"  class="form-control" onfocus="fcs('fname')"
+            maxlength="10" placeholder="First Name"/>
+	<div class="clr"></div>
+	  <input type="text" name="lname" id="lname"  class="form-control" onfocus="fcs('lname')"
+            placeholder="Last Name" />
+	<div class="clr"></div>
+	  <input type="text" name="email" id="email"  class="form-control" onfocus="fcs('email')"
+	placeholder="Email"
+            />
+	<div class="clr"></div>
+	  <input type="text" name="uname" id="uname"  class="form-control" onfocus="fcs('uname')"
+            placeholder="Username"/>
+	<div class="clr"></div>
+	  <input type="password" name="pass1" id="pass1" class="form-control" onfocus="fcs('pass1')"
+           placeholder="Date Of Birth"/>
+	<div class="clr"></div>
+	  <input type="password" name="pass1" id="pass1"  class="form-control" onfocus="fcs('pass1')"
+            placeholder="Password"/>
+	<div class="clr"></div>
+	  <input type="password" name="pass2" id="pass2"  class="form-control" onfocus="fcs('pass2')"
+             placeholder="Re-enter Password"/>
+	<div class="clr"></div><div class="clr"></div>
+	<div style="width:300px; margin: auto;">
+	  <input type="submit" name="submit" style="height:50px;width:300px"  value="Submit" class="btn btn-primary"/>
+      </fieldset>
+</form>
+
+</div>
+</body>
