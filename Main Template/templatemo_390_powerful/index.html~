@@ -10,12 +10,21 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/templatemo_style.css" rel="stylesheet">
-    
+    <link href="css/search_bar.css" rel="stylesheet">
     <link href="css/circle.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/nivo-slider.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+	$(function() {
+		$("#tfq2b").click(function() {
+			if ($("#tfq2b").val() == "Search for story"){
+				$("#tfq2b").val(""); 
+			}
+		});
+	});
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,43 +37,47 @@
     <header>
 	<div class="mWrapper">
       <div class="container">
-        <div class="row">
+	<form id="tfnewsearch" method="get" action="#">
+		        <input type="text" id="tfq2b" class="tftextinput2" name="q" placeholder="Search for story" size="21" maxlength="120" ><input 				type="submit" value="Search" class="btn btn-primary"><br>
+	<a href="registration.html" style="float:right;">Signup</a>  
+        </form>
+	<div class="row">
+	
           <div class="col-sm-4 col-md-4">
             <div class="logo">
-              <img src="images/logo.png" alt="Powerful Theme"></a>
+            <!--  <img src="images/logo.png" alt="Powerful Theme"></a>-->
             </div>
           </div>
 	<form action="#" id="login-form" style="float:right;">
         <fieldset>
           <span class="text">
-          <input type="text" value="Username" onFocus="if(this.value=='Username'){this.value=''}" onBlur="if(this.value==''){this.value='Username'}">
+          <input type="text" value="Username" id="uname" class="tftextinput2" onFocus="if(this.value=='Username'){this.value=''}" onBlur="if(this.value==''){this.value='Username'}">
           </span> <span class="text">
-          <input type="password" value="Password" onFocus="if(this.value=='Password'){this.value=''}" onBlur="if(this.value==''){this.value='Password'}">
+          <input type="password" value="Password" id="passwd" class="tftextinput2" onFocus="if(this.value=='Password'){this.value=''}" onBlur="if(this.value==''){this.value='Password'}">
           </span> <a class="btn btn-primary" href="#">Login</a> <span class="links"><a href="#">Forgot Password?</a><br/>
 	   <input type="checkbox" id="cookie_enable"> Keep me logged in<br>
-	  <a href="registration.html" style="float:right;">Signup</a>        
+	        
 	</fieldset>
       </form>
-          
+       
                 
 	   
-
-        </div>
+	</div>
 	<div class="col-sm-8 col-md-8">
             <nav class="mainMenu">
               <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#all_stories">All Stories</a></li>
+		<li><a href="#home">Home</a></li>
+                <li><a href="#all_stories">Stories</a></li>
                 <li><a href="#popular">Popular</a></li>
-                <li><a href="#categories">Categories</a></li>
+                <li><a href="#categories">Books</a></li>
                 <li><a href="#videos">Videos</a></li>
-		         
+	 	
 		</ul>
             </nav>
           </div>      
 	</div>
     </div>
-    <  <div id="home" class="mainTop">
+      <div id="home" class="mainTop">
         <div class="container">
           <div class="row">
        <!--     <div class="hidden-xs hidden-sm col-md-6">
@@ -102,7 +115,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="secHeader">
-              <h1 class="text-center"><br><br>All Stories</h1>
+              <h1 class="text-center"><br><br>Stories</h1>
               <p class="text-center"><small>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Credit goes to <a href="http://dev7studios.com/plugins/nivo-slider/">NivoSlider</a>.</small></p>
             </div>
             <div class="row">
@@ -377,7 +390,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="secHeader">
-              <h1 class="text-center"><a class="text-title" href="http://es.azimage.com" title="imagen" target="_blank"><br><br>Categories</a></h1>
+              <h1 class="text-center"><a class="text-title" href="http://es.azimage.com" title="imagen" target="_blank"><br><br>Books</a></h1>
               <p class="text-center"><small>Etiam ornare lectus quis urna cursus eleifend et nec nisl. Etiam porta, ante commodo facilisis blandit, magna ipsum elementum ligula, et dapibus purus nibh ut tellus. Vivamus justo nisi, ornare id lobortis non, cursus in enim.</small></p>
             </div>
             <div class="knobWrap">
