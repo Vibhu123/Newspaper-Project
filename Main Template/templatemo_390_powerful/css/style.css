@@ -1,0 +1,24 @@
+h1{
+  color:#00ACE9;
+}
+
+.inp{
+    float: right;
+    margin-right: 20px;
+    width: 260px;
+    height: 32px;
+    border: 1px solid #acacac;
+}
+.clr{
+    clear: both;
+    height: 10px;
+}
+
+label{
+    color:#00ace9;
+    padding-left: 20px;
+}
+
+legend{
+    font-weight: bold;
+}

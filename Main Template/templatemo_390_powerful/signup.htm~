@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)http://www.w3resource.com/javascript/form/example-javascript-form-validation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form">
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. ">
+<link rel="stylesheet" href="css/js-form-validation.css" type="text/css">
+<link href="css/templatemo_style.css" rel="stylesheet">
+<script src="js/sample-registration-form-validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();" style="float:centre;">
+<h1>Create Your Account.</h1>
+<form name="registration" onsubmit="return formValidation();">
+<ul>
+<li><label for="name">Name:</label></li>
+<li><input type="text" name="firstname" size="20" value="FirstName" onFocus="if(this.value=='FirstName'){this.value=''}" onBlur="if(this.value==''){this.value='FirstName'}">
+<input type="text" name ="lastname" size="15" value="LastName" onFocus="if(this.value=='LastName'){this.value=''}" onBlur="if(this.value==''){this.value='LastName'}"></li>
+<li><label for="userid">UserName:</label></li>
+<li><input type="text" name="userid" size="12"></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12"></li>
+
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50"></li>
+<li><label id="gender">Gender:</label></li>
+<li><select id="Gender">
+<option>I am..</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select></li>
+<li><fieldset class='birthday-picker'>
+    <select class='birth-year' name='birth[year]'></select>
+    <select class='birth-month' name='birth[month]'></select>
+    <select class='birth-day' name='birth[day]'></select>
+</fieldset></li>
+<li><input type="submit" name="submit" value="Submit"></li>
+</ul>
+</form>
+
+
+
+
+</body></html>

@@ -46,7 +46,7 @@
 	<option value="0" style="color:#000">I am..</option>
 	<option value="1" style="color:#000">Male</option>
 	<option value="2" style="color:#000">Female</option>
-	<option value="3" style="color:#000">Other</option>
+	<option value="I am.." style="color:#000">I am..</option>
 	</select>	
 	<div class="clr"></div><div class="clr"></div>
 	<div style="width:300px; margin: auto;">
